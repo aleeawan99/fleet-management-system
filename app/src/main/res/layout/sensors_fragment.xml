@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Parameters"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Symbol"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/alert_list_view"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Status"
+        android:textSize="18dp"
+        android:textColor="@android:color/secondary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+    <TextView
+        android:id="@+id/gas_paramter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Gas"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/gas_symbol"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/gas_paramter"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/gas_prev" />
+
+    <TextView
+        android:id="@+id/gas_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:text="No Gas"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/gas_symbol" />
+
+    <TextView
+        android:id="@+id/vibration_paramter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Vibration"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <ImageView
+        android:id="@+id/vibration_symbol"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_vertical"
+        app:layout_constraintStart_toEndOf="@+id/vibration_paramter"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:srcCompat="@drawable/vib" />
+
+    <TextView
+        android:id="@+id/vibration_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="No Vibration"
+        android:padding="2dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/vibration_symbol" />
+
+    <TextView
+        android:id="@+id/light_paramter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Light"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <ImageView
+        android:id="@+id/light_symbol"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_vertical"
+        app:layout_constraintStart_toEndOf="@+id/light_paramter"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:srcCompat="@drawable/light_prev" />
+
+    <TextView
+        android:id="@+id/light_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="No Light"
+        android:padding="2dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/light_symbol" />
+
+    <TextView
+        android:id="@+id/motion_paramter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Motion"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/motion_symbol"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/motion_paramter"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:srcCompat="@drawable/motion_prev" />
+
+    <TextView
+        android:id="@+id/motion_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="No Motion"
+        android:padding="2dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/motion_symbol" />
+
+    <TextView
+        android:id="@+id/tilt_paramter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Tilt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <ImageView
+        android:id="@+id/tilt_symbol"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tilt_paramter"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:srcCompat="@drawable/tilt_prev" />
+
+    <TextView
+        android:id="@+id/tilt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="No Tilt"
+        android:padding="2dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tilt_symbol" />
+
+</android.support.constraint.ConstraintLayout>

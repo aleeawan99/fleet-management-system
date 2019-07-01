@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map">
+    </com.google.android.gms.maps.MapView>
+
+    <Spinner
+        android:id="@+id/truck_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#e7ffffff"
+        android:entries="@array/spinnerItems"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="2dp"
+        android:background="#c1e6e6e6"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/engine_status"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_red_light"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engine Status"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/engine_status"/>
+
+        <Button
+            android:id="@+id/over_speeding"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/e"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/holo_green_light"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Over Speeding"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/over_speeding"/>
+
+        <Button
+            android:id="@+id/Geo-fence"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/en"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/holo_red_light"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/geo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geo-fence"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/Geo-fence"/>
+
+        <Button
+            android:id="@+id/rash_drive"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/geo"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/holo_green_light"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/rash_drive_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rash Drive"
+            android:visibility="gone"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/rash_drive"/>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:padding="2dp"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/map_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/maps_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/car_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/car_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map_btn" />
+
+        <ImageButton
+            android:id="@+id/parammeter_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/parametre_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/car_btn" />
+
+        <ImageButton
+            android:id="@+id/alert_config_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:padding="7dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/alert_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parammeter_btn" />
+
+        <ImageButton
+            android:id="@+id/driving_data"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:padding="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/driving_data_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alert_config_btn" />
+
+
+        <ImageButton
+            android:id="@+id/setting_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/config_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/driving_data" />
+
+        <ImageButton
+            android:id="@+id/help_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:padding="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/help_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setting_btn" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+    </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--
+    <Button
+        android:id="@+id/add_geofance_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Geofence"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/remove_geofance_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/remove_geofance_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Remove Geofence"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_geofance_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+-->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:text="Over Speed Alert:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="Speed (km/h)"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/over_speed_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:textOff="Off"
+        android:textOn="On"
+        app:layout_constraintBottom_toBottomOf="@id/editText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        app:layout_constraintTop_toBottomOf="@id/over_speed_alert" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Geofence Alert"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Switch
+        android:id="@+id/geofence_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:textOff="Off"
+        android:textOn="On"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/over_speed_alert" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        app:layout_constraintTop_toBottomOf="@id/geofence_alert" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Car Battery Low Alert:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <Switch
+        android:id="@+id/car_battery_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:textOff="Off"
+        android:textOn="On"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geofence_alert" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        app:layout_constraintTop_toBottomOf="@id/car_battery_alert" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="High Temperature Alert:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <Switch
+        android:id="@+id/high_temperature_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textOff="Off"
+        android:textOn="On"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_temp_alert" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"
+        app:layout_constraintTop_toBottomOf="@id/high_temperature_alert" />
+
+    <EditText
+        android:id="@+id/set_volt_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Voltage (V)"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/view2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toRightOf="@id/textView11"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <EditText
+        android:id="@+id/set_temp_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="12dp"
+        android:hint="Temperature (℃)"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        app:layout_constraintLeft_toRightOf="@id/textView12" />
+
+    <Button
+        android:id="@+id/source_geofence_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/buttonshape"
+        android:text="Add Source Geo-fence Circle Radius"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view4" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#b6b6b6"
+        app:layout_constraintTop_toBottomOf="@id/server_geofence_btn" />
+
+    <Button
+        android:id="@+id/waypoint_geofence_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/buttonshape"
+        android:text="Add Way-point Geo-fence Circle Radius"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view5" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#b6b6b6"
+        app:layout_constraintTop_toBottomOf="@id/source_geofence_btn" />
+
+    <Button
+        android:id="@+id/dest_geofence_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/buttonshape"
+        android:text="Add Destination Geo-fence Circle Radius"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view6" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#b6b6b6"
+        app:layout_constraintTop_toBottomOf="@id/waypoint_geofence_btn" />
+
+    <Button
+        android:id="@+id/server_geofence_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/buttonshapeserver"
+        android:text="Get All Geo-fences Radius From Server"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view3" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#b6b6b6"
+        app:layout_constraintTop_toBottomOf="@id/dest_geofence_btn" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tekfocal.assetmanagementsystem.MainActivity">
+    <item
+        android:id="@+id/action_asset"
+        android:orderInCategory="100"
+        android:title="Asset Tracking System"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_smart"
+        android:orderInCategory="101"
+        android:title="Smart Auto-Mate"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="102"
+        android:title="Exit"
+        app:showAsAction="never" />
+
+</menu>
